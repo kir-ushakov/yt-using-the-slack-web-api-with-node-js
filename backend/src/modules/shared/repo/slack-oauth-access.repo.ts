@@ -30,7 +30,7 @@ export class SlackOAuthAccessRepo {
   public async deletedSlackOAuthAccessById(slackOAuthAccessId: string) {
     const slackOAuthAccessModel = this._models.SlackOAuthAccessModel;
     await slackOAuthAccessModel.deleteOne({
-      id: slackOAuthAccessId,
+      _id: slackOAuthAccessId,
     });
   }
 
